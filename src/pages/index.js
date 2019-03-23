@@ -17,7 +17,10 @@ import Projects from '../views/Projects'
 import About from '../views/About'
 import Contact from '../views/Contact'
 
-import avatar from '../images/avatar.jpg'
+import Abhi from '../images/Abhipic.jpg'
+import Aid from '../images/aidpic.jpg'
+import Lee from '../images/leepic1.jpg'
+import Will from '../images/Will.jpg'
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -62,13 +65,11 @@ const Index = () => (
     <Layout />
     <Parallax pages={5}>
       <Hero offset={0}>
-        <BigTitle>
-          Hello, <br /> I'm John Doe.
-        </BigTitle>
-        <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
+        <BigTitle>Wala Designs</BigTitle>
+        <Subtitle>BRINGING YOUR BRAND TO LIFE</Subtitle>
       </Hero>
       <Projects offset={1}>
-        <Title>Projects</Title>
+        <Title>Our Latest Work</Title>
         <ProjectsWrapper>
           <ProjectCard
             title="Freiheit"
@@ -101,27 +102,26 @@ const Index = () => (
         </ProjectsWrapper>
       </Projects>
       <About offset={3}>
-        <Title>About</Title>
+        <Title>Who We Are</Title>
         <AboutHero>
-          <Avatar src={avatar} alt="John Doe" />
+          <Avatar src={Abhi} alt="Wala Designs" />
+          <Avatar src={Aid} alt="Wala Designs" />
+          <Avatar src={Lee} alt="Wala Designs" />
+          <Avatar src={Will} alt="Wala Designs" />
           <AboutSub>
-            The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-            Emoji into my speech to better express myself. Winky face.
+            Wala Design is a San Diego based web development and design group that focuses on creating beautiful,
+            responsive websites, to tell your brand’s story. Some of our capabilities include website development
+            (front-end and back-end) and web design.
           </AboutSub>
         </AboutHero>
-        <AboutDesc>
-          You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-          every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-          make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The kids
-          want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that all
-          right?
-        </AboutDesc>
+        {/* <AboutDesc>
+        </AboutDesc> */}
       </About>
       <Contact offset={4}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:2019 by Gatsby Starter Portfolio Cara.">Hi</a> or find me on other platforms:{' '}
+            Say <a href="mailto:2019 by Wala Designs.">Hi</a> or find me on other platforms:{' '}
           </ContactText>
         </Inner>
         <Footer>
